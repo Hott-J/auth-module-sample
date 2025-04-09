@@ -9,6 +9,14 @@ plugins {
 group = "com.example"
 version = "0.0.1-SNAPSHOT"
 
+tasks.getByName<org.springframework.boot.gradle.tasks.bundling.BootJar>("bootJar") {
+    enabled = false
+}
+
+tasks.getByName<Jar>("jar") {
+    enabled = true
+}
+
 repositories {
     mavenCentral()
 }
