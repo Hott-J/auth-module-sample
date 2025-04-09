@@ -1,0 +1,15 @@
+springdoc:
+  api-docs.enabled: true
+  swagger-ui.enabled: true
+
+eco:
+  datasource:
+    read.hikari: &local-hikari-datasource
+      jdbc-url: jdbc:postgresql://localhost:5432/example?stringtype=unspecified
+      username: root
+      password: secret
+    write.hikari: *local-hikari-datasource
+  api:
+    error:
+      include-exception: true
+      include-stacktrace: true

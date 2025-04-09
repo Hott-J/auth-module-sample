@@ -1,0 +1,59 @@
+spring:
+  jpa:
+    properties:
+      hibernate.highlight_sql: true
+      hibernate.show_sql: true
+
+app:
+  jwt:
+    id:
+      public-key: "-----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA05yjeEjqdEZNVISQCYnC
+      Ggr/nmpsUu7OPRyui2Ezaze+VcwzwZaGay19JlVsmIBvtIcfUmDruof/Ff/MIEgp
+      19kjaWKBDvkMUa6M6JjsBaOskUngXfTHPb3dFoED0atNRAOunLlopPn2X66uBd1o
+      kPBrY5MtW+aYNv2kQWYiy7XkYndoBukv3RWrwMx/0eY73iaVAbIutnHbLBZNd77S
+      ceM8oN0eQWGaWSSTV322mLMeeZgy3o69rVpsWP8CEN9NC/O1e1pa+7aj99Q1H8hR
+      9iUbfwlWRLlzVhGBSm8PsYuMhemTMjE4DkQgFiImmB/5wBXFnAP4sARPWXMtBTzi
+      SwIDAQAB
+      -----END PUBLIC KEY-----"
+      private-key: "-----BEGIN PRIVATE KEY-----
+    MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDTnKN4SOp0Rk1U
+    hJAJicIaCv+eamxS7s49HK6LYTNrN75VzDPBloZrLX0mVWyYgG+0hx9SYOu6h/8V
+    /8wgSCnX2SNpYoEO+QxRrozomOwFo6yRSeBd9Mc9vd0WgQPRq01EA66cuWik+fZf
+    rq4F3WiQ8Gtjky1b5pg2/aRBZiLLteRid2gG6S/dFavAzH/R5jveJpUBsi62cdss
+    Fk13vtJx4zyg3R5BYZpZJJNXfbaYsx55mDLejr2tWmxY/wIQ300L87V7Wlr7tqP3
+    1DUfyFH2JRt/CVZEuXNWEYFKbw+xi4yF6ZMyMTgORCAWIiaYH/nAFcWcA/iwBE9Z
+    cy0FPOJLAgMBAAECggEAcD1P83fxa3TyhVa+s2BvJLMavCLEjASAPafd6K3IwSDT
+    At0Jwq+dYnHBRLjgnc7Z8Q4Ojfo8bja+FSQVWDYOg593iekmfROZ9iU4NhMOdTtI
+    R9PAfvVbTKNNBieuJ+LNW7r8PcKV/5NZm4yiXxf944qx2yHwWCNqLxi/q7SJ1jQP
+    OGfuzYYiabT1KZIe3uXS42VHV9mjwuNuVp6Dyo1LGkL4D6OQj6WuURrp0kJx3ixo
+    v5tZbY3pYo784fgRkmUURx0W373q9TyIJUr1zQ2xHiCuvi+P8kwiQFjEiWCsGDKz
+    d+B7m4kqs4i1Ed3qZ018xhNWwBdiOij0063KMBsOoQKBgQD9vSrcQOdnKBctE88d
+    IM5H8bWaDHHK7iX9LgyMJ3s/Zyv5tX2wNp/9QiHmGxtD0NXweda51gWDnYNGQ+fL
+    Kp5jsVDqp4gKPXds+NWeLEKCqG1FLk4IxzuVtc5W/AkQNQzVBid8y2rt/ckFMX7N
+    qDEDvQ4QcNcdOh7hH/6Kr5KomwKBgQDVf17NHbCoBE7QWFEy0IU8wfQwgyM21R/A
+    bjlId7zKXEcrkbn/d/5GoZ/yn6ZTo4SMLzoiPDQSF0LcGwT/dJsjKh9sT8xf2MVB
+    MJ+jMs2IONdMsctksIy3TfpStu/hp0M4iXFj6dnXK/3uqiQwTEOQjaUzTlFnwlEq
+    wp+mzkIQEQKBgQDoo2LDlAJVsw0kuC/Bfg2DKtqcxeIi85wC+BBrA9vdMsO/66W0
+    RTEEq3iXF600zSkJlTvJIK/njygH6USBIq8bqjwNGNMCyH5RfAenQN8uGiwtLJpB
+    NCGuToVDfUr2AB2mxkC4C20bjP6cc1fWSOm/irt1WW/xDRO4xnPDRdxKFwKBgH83
+    4rm/E2FLD9u+hMQO1RYbTPMLcZRe8wirpZ61Gt5Klm4z6+17Bx33eWQOFgKI0Zbn
+    HXEBBtYw3jpiL1w5k6gklYzpEBOdDA2Id9e7khW2KTUeTOC3A2LHKH7ZW5/PF5M8
+    80BiPNim8i2hXOcayrf8b5Be/sshU1RznMa86UjBAoGBANxVLbIS1RJOyurhKfi4
+    vvtTKK8Ragkc2YgWXOBpabw7qnplwN/6bFwKiAtt8ybFkJCZ7C5bSSRIHr/pr2IW
+    bPX4Za1Sn402qHctVf71Nr/0bi4/cc1rus99XTKXekc6ApKF3T1LAV3soVYeDECi
+    tTxuaM86H4lMaNP+xgkoX8I0
+    -----END PRIVATE KEY-----"
+      issuer: "Example-Server"
+      audience: "Example-App"
+      expiring-time: 1h
+    access:
+      private-key: "y9gT6mC8kqZbYrjmqf09U26nXWZGqRp93YX4G3HgpZc="
+      issuer: "Example-Server"
+      audience: "Example-App"
+      expiring-time: 1h
+    refresh:
+      private-key: "plkCabRV7bWaQeXX5Jx6yXgVdFgpQ6X4opMGP/7eOcg="
+      issuer: "Example-Server"
+      audience: "Example-App"
+      expiring-time: 168h
